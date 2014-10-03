@@ -27,7 +27,7 @@ keep the following points in mind.
 ## Read these slides
 While I have a particular way of thinking about plotting, I haven't
 really written it up anywhere; the closest thing to that is
-[these slides](data-visualization-needs-to-die.pdf), which I would
+[these slides](http://small.dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf), which I would
 like you to read. They were part of a talk that wasn't recorded, so
 don't expect to understand it all. 
 
@@ -111,32 +111,87 @@ You can read about them in any of Edward Tufte's books, such as
 *The Visual Display of Quantitative Information*. Here are two main concepts
 to try to understand
 
-* Data:ink ratio
 * Escaping Flatland (presenting multivariate data)
+* Data:ink ratio
 
 ### More about the Grammar of Graphics
 Once you start seeing plots as mappings between abstract data and concrete
 elements, different plots start seeming much more similar. Look at a few
 plots, such as [these](http://www.edwardtufte.com/tufte/), and deconstruct
-them into their grammatical components.
+them into their grammatical components. Answer at least these questions
+about each plot.
 
-* `DATA`
-* `TRANS`
-* `SCALE`
-* `COORD`
-* `GUIDE`
+* What variables are represented?
+* What real-world element is each abstract variable mapped to?
 
-## More things you can read
+If you would like to delve deeper, try these questions.
 
-### Day 1
+* What is the coordinate system?
+* What happens when two data points collide on the plot?
+* What are the scales for the different variables?
+* How are the data transformed before they are plotted? That is, what
+    mathematical operations were applied?
 
-* The Grammar of Graphics, by Leland Wilkinson
-http://ggplot2.org/resources/2007-past-present-future.pdf
+Alternatively, just answer the following question:
+**How would you write this plot in ggplot2?**
 
-### Day 2
+### Learn more R
+Here are some materials for learning R.
 
-* Design Elements, by Timothy Samara
 * [R Spells for Data Wizards](http://thomaslevine.com/!/r-spells-for-data-wizards/)
 * [Intro to R](http://www.youtube.com/playlist?list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP) videos
 * [R-bloggers](http://www.r-bloggers.com/)
-* Like Python, [R is for wizards](http://www.matthewckeller.com/Lecture1.ppt)
+* [R is for wizards](http://www.matthewckeller.com/Lecture1.ppt)
+
+### Read more
+I tried to keep it short so that you could get on with the toy project,
+so I left out the following materials, which are also great.
+
+* *Visualizing Data*, by William Cleveland, has many fine examples of different
+ways to represent datasets with one variable and two variables.
+* [Here](http://ggplot2.org/resources/2007-past-present-future.pdf)
+are some more slides about ggplot2.
+* The *Grammar of Graphics*, by Leland Wilkinson, is obviously relevant.
+    See the notes in the appendix about reading it and about its terminology.
+
+## More on learning
+I'm curious to see whether this article made any sense or was helpful or
+anything. Also, here's a bit about my
+[views on learning](http://thomaslevine.com/!/learning-data-stuff/).
+Do [get in touch](mailto:_@thomaslevine.com) about any of this!
+
+<hr>
+
+## Appendix
+
+### Literature
+Here are all of the external materials that I referenced
+
+* [Data visualization needs to die.](http://small.dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf), which I would
+* Talks by Hadley Wickham
+  * [A video](https://www.youtube.com/watch?v=TaxJwC_MP9Q)
+  * [Some slides](http://ggplot2.org/resources/2007-vanderbilt.pdf)
+* *Design Elements*, by Timothy Samara, or this
+    [summary](http://www.behance.net/gallery/Book-Layout-Timothy-Samaras-20-Rules-of-Good-Design/7616553)
+* Anything by Edward Tufte
+
+### Reading the Grammar of Graphics
+I disliked the order in which the Grammar of Graphics was presented;
+consider reading it in the order of [this outline](grammar-of-graphics-outline.mdwn).
+
+### Grammar of Graphics versus ggplot2
+The Grammar of Graphics breaks things up into six command types.
+They have different names in ggplot, so here are the translations.
+
+Data
+    The dataset is specified with a `DATA` command in the Grammar of Graphics and with `ggplot` in ggplot2.
+Transformations
+    Variables might need to be manipulated before plotting. This is specified with a `TRANS` command in the Grammar of Graphics or with normal R code in ggplot2
+Scale
+    We can have linear scales, a logarithmic scales, a date scales, and so on. This is specified with a `SCALE` command in the Grammar of Graphics or with a `scale_` command in ggplot2 (like `scale_size_discrete`).
+Coordinates
+    We often use a Cartesian coordinates system, but there are so many others. These are `COORD` commands in the Grammar of Graphics, and they are prefixed with `coord_` in ggplot2.
+Guides
+    These are axes and other annotations. They're called `GUIDE` in the Grammar of Graphics and have many manifestations in ggplot2.
+Elements/geometries
+    These are the concrete things that represent the data; they're `ELEMENT` commands in the Grammar of Graphics and `geom_` commands in ggplot2.
