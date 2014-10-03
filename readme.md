@@ -8,30 +8,61 @@ the directions below.
 This should also serve as a good introduction to ggplot2 and to R.
 
 ## How I think about plotting
+I define "plotting" thusly.
+
+> Plotting is the process of mapping abstract data to concrete
+> things that we can perceive.
+
+Perhaps that will make more sense by the time you're finished with this
+little tutorial. As you go through the various materials below, try to
+keep the following points in mind.
 
 1. Data are abstract and do not have a fundamental representation
     in the real world.
 2. We map abstract data onto concrete things in the real world so
     that we can undersand the abstract data.
+3. In order to make good plots, we have to choose mappings that
+    people understand.
 
+## Read these slides
 While I have a particular way of thinking about plotting, I haven't
 really written it up anywhere; the closest thing to that is
-[these slides](http://small.dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf).
+[these slides](data-visualization-needs-to-die.pdf), which I would
+like you to read. They were part of a talk that wasn't recorded, so
+don't expect to understand it all. 
 
-But many people have inspired this way of thinking, so maybe you can
-just read their writings and watch their videos.
+The main thing that you should pay attention to, for now, is how
+abstract data can be mapped to things other than graphics, per my
+definition of "plotting".
 
-## Computer things
-Let's also see if you can learn a bit about ggplot2 without learning R.
+The other thing you might pay attention to is the value of representing
+many different variables at once.
+
+## Watch this video
+I haven't written much about how I think about plotting, so I can't
+give you much more that I have written. On the other hand, many people
+have inspired this way of thinking, so maybe you can just read their
+writings and watch their videos.
+
+My definition of plotting is based largely on ggplot2 and the Grammar
+of Graphics, by Hadley Wickham and Leland Wilkinson, respectively.
+My insistance on representing many dimensions comes largely from
+Edward Tufte and from experiment design theory. And my views on making
+graphics that are visually interesting, coherent, and generally "good"
+come largely from Edward Tufte and Timothy Samara.
+
+I'll give you many references later. For now, just watch
+[this video](https://www.youtube.com/watch?v=TaxJwC_MP9Q)
+until you get bored. Alternatively, you can read through
+[these slides](http://ggplot2.org/resources/2007-vanderbilt.pdf).
+
+## Set up your computer
+Now let's also see if you can learn a bit about ggplot2 without learning R.
 (Well, actually, I already know that you totally can.)
+
 I do assume, however, that you have installed R, you can open it. And
 it would be nice if you could write simple SQL, but it's probably fine
 if you don't.
-
-## Watch this video
-For now, just watch [this video](https://www.youtube.com/watch?v=TaxJwC_MP9Q)
-until you get bored. Alternatively, you can read through
-[these slides](http://ggplot2.org/resources/2007-vanderbilt.pdf).
 
 ## Toy project
 [treasury.io](http://treasury.io) provides a daily feed of deposits
