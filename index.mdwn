@@ -1,11 +1,13 @@
 How I think about plotting
 ===============================
 I have a certain way of thinking about plots. Let's see if I can
-teach it to you. I've prepared a toy project and some videos and
-readings. If this sounds like something you'd like to learn, follow
-the directions below.
+teach it to you. If this sounds like something you'd like to learn,
+read on.
 
-This should also serve as a good introduction to ggplot2 and to R.
+I've prepared a toy project and some videos and some readings.
+I hope that these will give you some understanding of plotting.
+They might also teach you something about ggplot2 and R, but
+focus more on understanding plotting.
 
 ## How I think about plotting
 I define "plotting" thusly.
@@ -64,6 +66,18 @@ I do assume, however, that you have installed R, you can open it. And
 it would be nice if you could write simple SQL, but it's probably fine
 if you don't.
 
+You might choose to download all of the files that you need with either
+of the following commands
+
+    # Option 1
+    git clone git@github.com:tlevine/plots-ggplot2-without-r
+
+    # Option 2
+    wget --recursive --level=2 http://small.dada.pink/plots-ggplot2-without-r/
+
+But you don't need to do either of those, as all of the files are linked
+from the present webpage.
+
 ## Toy project
 [treasury.io](http://treasury.io) provides a daily feed of deposits
 and withdrawals from different accounts within the federal treasury.
@@ -82,7 +96,25 @@ how R works. Query the data with the `sqldf` function, and then pass the
 results of those queries to the `ggplot` function to make plots.
 
 Start out by changing the contents of the `aes` function call and by
-adding geoms other than `geom_point`. Look at the
+adding geoms other than `geom_point`. Here are some aesthetics (`aes`)
+that you might try.
+
+* `x`
+* `y`
+* `group`
+* `label`
+* `color`
+* `fill`
+
+And here are some geoms you might try.
+
+* `geom_point`
+* `geom_text`
+* `geom_line`
+* `geom_path`
+* `geom_bar`
+
+You can look at the
 [ggplot2 documuentation](http://docs.ggplot2.org/current/),
 but ignore the parts that you don't understand.
 
@@ -96,23 +128,6 @@ toy project.
 ### Use your own data
 If I were you, I'd probably just want to start playing with my own data.
 Figure out how to load you data into R, and then start plotting it.
-
-### Make your graphs look better.
-In general, if you want to make something interesting, follow most of
-the rules and then break one or two.
-
-You can read *Design Elements*, by Timothy Samara, or you can just read
-this [summary](http://www.behance.net/gallery/Book-Layout-Timothy-Samaras-20-Rules-of-Good-Design/7616553)
-of the rules.
-Then try appling these design elements to your plots.
-
-There are some special rules for visual displays of quantitative information.
-You can read about them in any of Edward Tufte's books, such as
-*The Visual Display of Quantitative Information*. Here are two main concepts
-to try to understand
-
-* Escaping Flatland (presenting multivariate data)
-* Data:ink ratio
 
 ### More about the Grammar of Graphics
 Once you start seeing plots as mappings between abstract data and concrete
@@ -134,6 +149,23 @@ If you would like to delve deeper, try these questions.
 
 Alternatively, just answer the following question:
 **How would you write this plot in ggplot2?**
+
+### Make your graphs look better.
+In general, if you want to make something interesting, follow most of
+the rules and then break one or two.
+
+You can read *Design Elements*, by Timothy Samara, or you can just read
+this [summary](http://www.behance.net/gallery/Book-Layout-Timothy-Samaras-20-Rules-of-Good-Design/7616553)
+of the rules.
+Then try appling these design elements to your plots.
+
+There are some special rules for visual displays of quantitative information.
+You can read about them in any of Edward Tufte's books, such as
+*The Visual Display of Quantitative Information*. Here are two main concepts
+to try to understand
+
+* Escaping Flatland (presenting multivariate data)
+* Data:ink ratio
 
 ### Learn more R
 Here are some materials for learning R.
