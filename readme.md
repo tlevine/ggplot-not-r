@@ -104,29 +104,34 @@ the rules and then break one or two.
 You can read *Design Elements*, by Timothy Samara, or you can just read
 this [summary](http://www.behance.net/gallery/Book-Layout-Timothy-Samaras-20-Rules-of-Good-Design/7616553)
 of the rules.
-
 Then try appling these design elements to your plots.
 
-## The Visual Display of Quantitative Information
+There are some special rules for visual displays of quantitative information.
+You can read about them in any of Edward Tufte's books, such as
+*The Visual Display of Quantitative Information*. Here are two main concepts
+to try to understand
 
 * Data:ink ratio
-* Escape Flatland; present multivariate data.
-* [Examples](http://www.edwardtufte.com/tufte/)
+* Escaping Flatland (presenting multivariate data)
 
+### More about the Grammar of Graphics
+Once you start seeing plots as mappings between abstract data and concrete
+elements, different plots start seeming much more similar. Look at a few
+plots, such as [these](http://www.edwardtufte.com/tufte/), and deconstruct
+them into their grammatical components.
 
-
-
-
-* This [summary](http://www.behance.net/gallery/Book-Layout-Timothy-Samaras-20-Rules-of-Good-Design/7616553)
-    of Timothy Samara's Design Elements.
-* Grammar of graphics video?
-    http://ggplot2.org/resources/2007-vanderbilt.pdf
+* `DATA`
+* `TRANS`
+* `SCALE`
+* `COORD`
+* `GUIDE`
 
 ## More things you can read
 
 ### Day 1
 
 * The Grammar of Graphics, by Leland Wilkinson
+http://ggplot2.org/resources/2007-past-present-future.pdf
 
 ### Day 2
 
@@ -134,3 +139,4 @@ Then try appling these design elements to your plots.
 * [R Spells for Data Wizards](http://thomaslevine.com/!/r-spells-for-data-wizards/)
 * [Intro to R](http://www.youtube.com/playlist?list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP) videos
 * [R-bloggers](http://www.r-bloggers.com/)
+* Like Python, [R is for wizards](http://www.matthewckeller.com/Lecture1.ppt)

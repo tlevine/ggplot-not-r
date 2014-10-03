@@ -8,6 +8,7 @@ The Grammar of Graphics
 * `SCALE`
 * `COORD`
 * `GUIDE`
+* `ELEMENT`
 
 ## Aesthetics
 (chapter 10)
