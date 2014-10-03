@@ -63,5 +63,38 @@ print(sqldf('SELECt sum(today) FROM t3a_head'))
 # There are a lot of syntaxes you can use with ggplot.
 # This one is probably the most verbose format you can get,
 # but it makes the different components quite clear.
-p <- ggplot(t3a_head) + aes(x = date, y = today) + geom_point()
-print(p)
+p1 <- ggplot(t3a_head) + aes(x = date, y = today) + geom_point()
+print(p1)
+
+
+
+
+sql <- '
+SELECT
+  "table",
+  "date",
+  "year_month",
+  "year",
+  "month",
+  "day",
+  "weekday",
+  "account",
+  "transaction_type",
+  "parent_item",
+  "is_total",
+  "is_net",
+  "item",
+  "item_raw",
+  "today",
+  "mtd",
+  "fytd",
+  "url"
+FROM "t2"
+WHERE ("date" > \'2013-09-01\')
+AND ("transaction_type" = \'deposit\' OR "transaction_type" = \'withdrawal\')
+'
+recent.transactions <- sqldf(sql)
+recent.transactions$date <- as.Date(recent.transactions$date)
+p2 <- ggplot(subset(recent.transactions, is_total == 0)) +
+  aes(x = date, group = transaction_type, color = transaction_type, y = today) +
+  geom_line() + facet_wrap(~ item)
