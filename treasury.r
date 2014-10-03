@@ -13,7 +13,7 @@ if (!(file.exists('treasury_data.db'))) {
   quit()
 }
 
-if (!(require(ggplot2) & require(sqldf)) {
+if (!(require(ggplot2) & require(sqldf))) {
   cat("You need to install some packages; run this from R.
 
   install.packages(c('ggplot2','sqldf'))
