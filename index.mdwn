@@ -177,21 +177,33 @@ Here are all of the external materials that I referenced
 
 ### Reading the Grammar of Graphics
 I disliked the order in which the Grammar of Graphics was presented;
-consider reading it in the order of [this outline](grammar-of-graphics-outline.mdwn).
+consider reading it in the order of
+[this outline](grammar-of-graphics-outline.mdwn).
 
 ### Grammar of Graphics versus ggplot2
 The Grammar of Graphics breaks things up into six command types.
 They have different names in ggplot, so here are the translations.
 
-Data
-    The dataset is specified with a `DATA` command in the Grammar of Graphics and with `ggplot` in ggplot2.
-Transformations
-    Variables might need to be manipulated before plotting. This is specified with a `TRANS` command in the Grammar of Graphics or with normal R code in ggplot2
-Scale
-    We can have linear scales, a logarithmic scales, a date scales, and so on. This is specified with a `SCALE` command in the Grammar of Graphics or with a `scale_` command in ggplot2 (like `scale_size_discrete`).
-Coordinates
-    We often use a Cartesian coordinates system, but there are so many others. These are `COORD` commands in the Grammar of Graphics, and they are prefixed with `coord_` in ggplot2.
-Guides
-    These are axes and other annotations. They're called `GUIDE` in the Grammar of Graphics and have many manifestations in ggplot2.
-Elements/geometries
-    These are the concrete things that represent the data; they're `ELEMENT` commands in the Grammar of Graphics and `geom_` commands in ggplot2.
+1. The dataset is specified with a `DATA` command in the Grammar of
+    Graphics and with `ggplot` in ggplot2.
+2. Variables might need to be manipulated before plotting. This is
+    specified with a `TRANS` command in the Grammar of Graphics or
+    with normal R code in ggplot2
+3. We can have linear scales, a logarithmic scales, a date scales,
+    and so on. This is specified with a `SCALE` command in the
+    Grammar of Graphics or with a `scale_` command in ggplot2
+    (like `scale_size_discrete`).
+4. We often use a Cartesian coordinates system, but there are so
+    many others. These are `COORD` commands in the Grammar of Graphics,
+    and they are prefixed with `coord_` in ggplot2.
+5. Axes and other annotations are called `GUIDE` in the Grammar of
+    Graphics and have many manifestations in ggplot2.
+6. Elements/geometries are the concrete things that represent the
+    data; they're `ELEMENT` commands in the Grammar of Graphics and
+    `geom_` commands in ggplot2.
+
+### Mirror
+In case any of the links ever die, check these websites.
+
+* [http://small.dada.pink/plots-ggplot2-without-r/](http://small.dada.pink/plots-ggplot2-without-r/)
+* [https://github.com/tlevine/plots-ggplot2-without-r/](https://github.com/tlevine/plots-ggplot2-without-r/)
