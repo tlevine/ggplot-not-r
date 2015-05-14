@@ -70,7 +70,22 @@ I'll give you many references later. For now, just watch
 until you get bored. Alternatively, you can read through
 [these slides](http://ggplot2.org/resources/2007-vanderbilt.pdf).
 
-## Set up your computer
+## Toy project
+Perhaps a toy project would help.
+
+[treasury.io](http://treasury.io) provides a daily feed of deposits
+and withdrawals from different accounts within the federal treasury.
+You can download the full historical feed as a SQLite3 database.
+
+    wget http://api.treasury.io/cc7znvq/47d80ae900e04f2/http/treasury_data.db
+
+Here's a [codebook](https://github.com/csvsoundsystem/federal-treasury-api/wiki/Treasury.io-Data-Dictionary).
+
+You are going to play around with these data and make some plots.
+It's probably easiest if you come up with an arbitrary question for yourself,
+like "How does spending differ between Tuesdays and Thursdays?"
+
+### Set up your computer
 Now let's also see if you can learn a bit about ggplot2 without learning R.
 (Well, actually, I already know that you totally can.)
 
@@ -90,20 +105,9 @@ of the following commands
 But you don't need to do either of those, as all of the files are linked
 from the present webpage.
 
-## Toy project
-[treasury.io](http://treasury.io) provides a daily feed of deposits
-and withdrawals from different accounts within the federal treasury.
-You can download the full historical feed as a SQLite3 database.
-
-    wget http://api.treasury.io/cc7znvq/47d80ae900e04f2/http/treasury_data.db
-
-Here's a [codebook](https://github.com/csvsoundsystem/federal-treasury-api/wiki/Treasury.io-Data-Dictionary).
-
-You are going to play around with these data and make some plots.
-It's probably easiest if you come up with an arbitrary question for yourself,
-like "How does spending differ between Tuesdays and Thursdays?"
-
-Base your code on [`treasury.r`](treasury.r) so that you don't have to know
+### Make plots
+Base your code on [`treasury.r`](http://dada.pink/ggplot-not-r/treasury.r)
+so that you don't have to know
 how R works. Query the data with the `sqldf` function, and then pass the
 results of those queries to the `ggplot` function to make plots.
 
@@ -211,7 +215,7 @@ Do [get in touch](mailto:_@thomaslevine.com) about any of this!
 ### Literature
 Here are all of the external materials that I referenced
 
-* [Data visualization needs to die.](http://small.dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf), which I would
+* [Data visualization needs to die.](http://small.dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf)
 * Talks by Hadley Wickham
   * [A video](https://www.youtube.com/watch?v=TaxJwC_MP9Q)
   * [Some slides](http://ggplot2.org/resources/2007-vanderbilt.pdf)
@@ -269,7 +273,6 @@ proud of, with links to the articles that I took them from.
 </a>
      
 [Search my website](https://thomaslevine.com/search/?q=plot) to see more.
-
 
 ### Mirror
 In case any of the links ever die, check these websites.
