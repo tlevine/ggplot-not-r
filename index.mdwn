@@ -41,7 +41,7 @@ focus more on understanding plotting.
 ## Read these slides
 While I have a particular way of thinking about plotting, I haven't
 really written it up anywhere; the closest thing to that is
-[these slides](http://small.dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf), which I would
+[these slides](http://dada.pink/gastronomification-big-data-talk/hacks-hackers-berlin-2014-08/data-visualization-needs-to-die.pdf), which I would
 like you to read. They were part of a talk that wasn't recorded, so
 don't expect to understand it all. 
 
