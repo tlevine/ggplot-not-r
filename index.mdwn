@@ -82,10 +82,10 @@ You might choose to download all of the files that you need with either
 of the following commands
 
     # Option 1
-    git clone git@github.com:tlevine/plots-ggplot2-without-r
+    git clone git@github.com:tlevine/ggplot-not-r
 
     # Option 2
-    wget --recursive --level=2 http://dada.pink/ggplot-without-r/
+    wget --recursive --level=2 http://dada.pink/ggplot-not-r/
 
 But you don't need to do either of those, as all of the files are linked
 from the present webpage.
@@ -256,4 +256,4 @@ proud of, with links to the articles that I took them from.
 In case any of the links ever die, check these websites.
 
 * [http://dada.pink/ggplot-not-r/](http://dada.pink/ggplot-not-r/)
-* [https://github.com/tlevine/plots-ggplot2-without-r/](https://github.com/tlevine/plots-ggplot2-without-r/)
+* [https://github.com/tlevine/ggplot-not-r/](https://github.com/tlevine/ggplot-not-r/)
