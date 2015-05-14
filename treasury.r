@@ -1,5 +1,5 @@
 # -----------------------------------------
-# Ignore everything above the line that
+# Ignore everything until the line that
 # says "Ignore everything above this line."
 # -----------------------------------------
 
@@ -49,7 +49,7 @@ t3a_head <- sqldf('SELECT * FROM t3a LIMIT 100;')
 # Note: sqldf queries both from the SQLite3 database
 # and from the current R session.
 
-print(sqldf('SELECt sum(today) FROM t3a_head'))
+print(sqldf('SELECT sum(today) FROM t3a_head'))
 
 # Note well: Do not create variables with the names of any of the tables.
 # (If you do that, sqldf will query the table from the R session rather than
