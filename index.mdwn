@@ -1,8 +1,27 @@
 How I think about plotting
 ===============================
-I have a certain way of thinking about plots. Let's see if I can
-teach it to you. If this sounds like something you'd like to learn,
-read on.
+Have you seen plots of data that are ridiculously explanatory and you
+can't understand why? Do you want to plot data and have no idea what sort
+of plot to use? Or do you want to distinguish between plots that are
+informative and plots that are simply flashy?
+
+I have a certain way of thinking about plots, and this is part of how
+I manage to make them so easily. Here are some plots I'm reasonably
+proud of, with links to the articles that I took them from.
+
+<a href="https://thomaslevine.com/!/risley-toilets/">
+  <img alt="Plot of acceptability ratings and prevalance of six bathroom sanitation issues indicating low acceptability and high incidence of urine on toilets"
+       src="https://thomaslevine.com/!/risley-toilets/acceptability.png" />
+</a>
+
+<img src="https://thomaslevine.com/!/hovering-cycle/figure/pie-matrix-1.png"
+     
+You can see more 
+https://thomaslevine.com/search/?q=plot
+
+https://thomaslevine.com/!/scarsdale-estimated-market-values/
+https://thomaslevine.com/!/hovering-cycle/
+https://thomaslevine.com/!/risley-toilets/
 
 I've prepared a toy project and some videos and some readings.
 I hope that these will give you some understanding of plotting.
