@@ -1,12 +1,36 @@
-How I think about plotting
-===============================
+How I think about plotting data
+================================
 Have you seen plots of data that are ridiculously explanatory and you
 can't understand why? Do you want to plot data and have no idea what sort
 of plot to use? Or do you want to distinguish between plots that are
 informative and plots that are simply flashy?
 
-I have a certain way of thinking about plots, and this is part of how
-I manage to make them so easily. Here are some plots I'm reasonably
+## Principles
+Here are two principles that I hope to convey. They might not make sense
+at the moment, but try to keep them in mind as you read the rest of this
+article.
+
+### 1. Plotting is how we perceive abstract data
+I define "plotting" thusly.
+
+> Plotting is the process of mapping abstract data to concrete
+> things that we can perceive.
+
+Data are abstract and do not have a fundamental representation in the real
+world. We map abstract data onto concrete things in the real world so that
+we can undersand the abstract data. **In order to make good plots, we have
+to choose mappings that people understand**.
+
+Some people think of data tables and histograms (for example) as pure, true
+representations of data. I don't. These are simple plots and may be easier
+to understand than complex plots, but they still involve deciding how to
+represent abstract data as concrete things that we can perceive.
+
+### 2. Escape flatland
+
+
+## Some plots Tom made
+Here are some plots that I didn't spend much time on but am reasonably
 proud of, with links to the articles that I took them from.
 
 <a href="https://thomaslevine.com/!/risley-toilets/">
@@ -14,36 +38,23 @@ proud of, with links to the articles that I took them from.
        src="https://thomaslevine.com/!/risley-toilets/acceptability.png" />
 </a>
 
-<img src="https://thomaslevine.com/!/hovering-cycle/figure/pie-matrix-1.png"
-     
-You can see more 
-https://thomaslevine.com/search/?q=plot
+<a href="https://thomaslevine.com/!/hovering-cycle/">
+  <img src="https://thomaslevine.com/!/hovering-cycle/figure/pie-matrix-1.png"
+       alt="Polar plots of posture dirtiness (clean versus dirty) by toilet use scenario" />
+</a>
 
-https://thomaslevine.com/!/scarsdale-estimated-market-values/
-https://thomaslevine.com/!/hovering-cycle/
-https://thomaslevine.com/!/risley-toilets/
+<a href="https://thomaslevine.com/!/scarsdale-estimated-market-values/">
+  <img src="https://thomaslevine.com/!/scarsdale-estimated-market-values/plot.png"
+       alt="Nominal market value of houses as a function of the value of a dollar over time"  />
+</a>
+     
+[Search my website](https://thomaslevine.com/search/?q=plot) to see more.
+
 
 I've prepared a toy project and some videos and some readings.
 I hope that these will give you some understanding of plotting.
 They might also teach you something about ggplot2 and R, but
 focus more on understanding plotting.
-
-## How I think about plotting
-I define "plotting" thusly.
-
-> Plotting is the process of mapping abstract data to concrete
-> things that we can perceive.
-
-Perhaps that will make more sense by the time you're finished with this
-little tutorial. As you go through the various materials below, try to
-keep the following points in mind.
-
-1. Data are abstract and do not have a fundamental representation
-    in the real world.
-2. We map abstract data onto concrete things in the real world so
-    that we can undersand the abstract data.
-3. In order to make good plots, we have to choose mappings that
-    people understand.
 
 ## Read these slides
 While I have a particular way of thinking about plotting, I haven't
