@@ -33,28 +33,6 @@ I pay lots of attention to how many different variables I am representing
 in one plot, and I always try to add more. I look for interactions in plots
 the same way that I look for interactions in statistical models.
 
-## Some plots Tom made
-Here are some plots that I didn't spend much time on but am reasonably
-proud of, with links to the articles that I took them from.
-
-<a href="https://thomaslevine.com/!/risley-toilets/">
-  <img alt="Plot of acceptability ratings and prevalance of six bathroom sanitation issues indicating low acceptability and high incidence of urine on toilets"
-       src="https://thomaslevine.com/!/risley-toilets/acceptability.png" />
-</a>
-
-<a href="https://thomaslevine.com/!/hovering-cycle/">
-  <img src="https://thomaslevine.com/!/hovering-cycle/figure/pie-matrix-1.png"
-       alt="Polar plots of posture dirtiness (clean versus dirty) by toilet use scenario" />
-</a>
-
-<a href="https://thomaslevine.com/!/scarsdale-estimated-market-values/">
-  <img src="https://thomaslevine.com/!/scarsdale-estimated-market-values/plot.png"
-       alt="Nominal market value of houses as a function of the value of a dollar over time"  />
-</a>
-     
-[Search my website](https://thomaslevine.com/search/?q=plot) to see more.
-
-
 I've prepared a toy project and some videos and some readings.
 I hope that these will give you some understanding of plotting.
 They might also teach you something about ggplot2 and R, but
@@ -107,28 +85,12 @@ of the following commands
     git clone git@github.com:tlevine/plots-ggplot2-without-r
 
     # Option 2
-    wget --recursive --level=2 http://small.dada.pink/plots-ggplot2-without-r/
+    wget --recursive --level=2 http://dada.pink/ggplot-without-r/
 
 But you don't need to do either of those, as all of the files are linked
 from the present webpage.
 
 ## Toy project
-[treasury.io](http://treasury.io) provides a daily feed of deposits
-and withdrawals from different accounts within the federal treasury.
-You can download the full historical feed as a SQLite3 database.
-
-    wget http://api.treasury.io/cc7znvq/47d80ae900e04f2/http/treasury_data.db
-
-Here's a [codebook](https://github.com/csvsoundsystem/federal-treasury-api/wiki/Treasury.io-Data-Dictionary).
-
-You are going to play around with these data and make some plots.
-It's probably easiest if you come up with an arbitrary question for yourself,
-like "How does spending differ between Tuesdays and Thursdays?"
-
-Base your code on [`treasury.r`](treasury.r) so that you don't have to know
-how R works. Query the data with the `sqldf` function, and then pass the
-results of those queries to the `ggplot` function to make plots.
-
 Start out by changing the contents of the `aes` function call and by
 adding geoms other than `geom_point`. Here are some aesthetics (`aes`)
 that you might try.
@@ -153,7 +115,7 @@ You can look at the
 but ignore the parts that you don't understand.
 
 Don't worry about making particularly pretty plots; just try to make plots
-that tell you something about the treasury.
+that tell you something.
 
 ## When you get bored
 Here are a few directions you can go when you get tired of the above
@@ -223,7 +185,7 @@ are some more slides about ggplot2.
 ## More on learning
 I'm curious to see whether this article made any sense or was helpful or
 anything. Also, here's a bit about my
-[views on learning](http://thomaslevine.com/!/learning-data-stuff/).
+[views on learning](http://thomaslevine.com/!/tom-computer-school/).
 Do [get in touch](mailto:_@thomaslevine.com) about any of this!
 
 <hr>
@@ -268,8 +230,30 @@ They have different names in ggplot, so here are the translations.
     data; they're `ELEMENT` commands in the Grammar of Graphics and
     `geom_` commands in ggplot2.
 
+### Some plots Tom made
+Here are some plots that I didn't spend much time on but am reasonably
+proud of, with links to the articles that I took them from.
+
+<a href="https://thomaslevine.com/!/risley-toilets/">
+  <img alt="Plot of acceptability ratings and prevalance of six bathroom sanitation issues indicating low acceptability and high incidence of urine on toilets"
+       src="https://thomaslevine.com/!/risley-toilets/acceptability.png" />
+</a>
+
+<a href="https://thomaslevine.com/!/hovering-cycle/">
+  <img src="https://thomaslevine.com/!/hovering-cycle/figure/pie-matrix-1.png"
+       alt="Polar plots of posture dirtiness (clean versus dirty) by toilet use scenario" />
+</a>
+
+<a href="https://thomaslevine.com/!/scarsdale-estimated-market-values/">
+  <img src="https://thomaslevine.com/!/scarsdale-estimated-market-values/plot.png"
+       alt="Nominal market value of houses as a function of the value of a dollar over time"  />
+</a>
+     
+[Search my website](https://thomaslevine.com/search/?q=plot) to see more.
+
+
 ### Mirror
 In case any of the links ever die, check these websites.
 
-* [http://small.dada.pink/plots-ggplot2-without-r/](http://small.dada.pink/plots-ggplot2-without-r/)
+* [http://dada.pink/ggplot-not-r/](http://dada.pink/ggplot-not-r/)
 * [https://github.com/tlevine/plots-ggplot2-without-r/](https://github.com/tlevine/plots-ggplot2-without-r/)
