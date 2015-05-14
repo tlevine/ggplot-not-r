@@ -27,7 +27,11 @@ to understand than complex plots, but they still involve deciding how to
 represent abstract data as concrete things that we can perceive.
 
 ### 2. Escape flatland
-
+Plots are more informative when they relate/compare several things.
+**An enthralling plot relates several variables without being distracting**.
+I pay lots of attention to how many different variables I am representing
+in one plot, and I always try to add more. I look for interactions in plots
+the same way that I look for interactions in statistical models.
 
 ## Some plots Tom made
 Here are some plots that I didn't spend much time on but am reasonably
