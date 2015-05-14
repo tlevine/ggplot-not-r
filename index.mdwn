@@ -91,6 +91,22 @@ But you don't need to do either of those, as all of the files are linked
 from the present webpage.
 
 ## Toy project
+[treasury.io](http://treasury.io) provides a daily feed of deposits
+and withdrawals from different accounts within the federal treasury.
+You can download the full historical feed as a SQLite3 database.
+
+    wget http://api.treasury.io/cc7znvq/47d80ae900e04f2/http/treasury_data.db
+
+Here's a [codebook](https://github.com/csvsoundsystem/federal-treasury-api/wiki/Treasury.io-Data-Dictionary).
+
+You are going to play around with these data and make some plots.
+It's probably easiest if you come up with an arbitrary question for yourself,
+like "How does spending differ between Tuesdays and Thursdays?"
+
+Base your code on [`treasury.r`](treasury.r) so that you don't have to know
+how R works. Query the data with the `sqldf` function, and then pass the
+results of those queries to the `ggplot` function to make plots.
+
 Start out by changing the contents of the `aes` function call and by
 adding geoms other than `geom_point`. Here are some aesthetics (`aes`)
 that you might try.
@@ -236,16 +252,19 @@ proud of, with links to the articles that I took them from.
 
 <a href="https://thomaslevine.com/!/risley-toilets/">
   <img alt="Plot of acceptability ratings and prevalance of six bathroom sanitation issues indicating low acceptability and high incidence of urine on toilets"
+       class="wide"
        src="https://thomaslevine.com/!/risley-toilets/acceptability.png" />
 </a>
 
 <a href="https://thomaslevine.com/!/hovering-cycle/">
   <img src="https://thomaslevine.com/!/hovering-cycle/figure/pie-matrix-1.png"
+       class="wide"
        alt="Polar plots of posture dirtiness (clean versus dirty) by toilet use scenario" />
 </a>
 
 <a href="https://thomaslevine.com/!/scarsdale-estimated-market-values/">
   <img src="https://thomaslevine.com/!/scarsdale-estimated-market-values/plot.png"
+       class="wide"
        alt="Nominal market value of houses as a function of the value of a dollar over time"  />
 </a>
      
